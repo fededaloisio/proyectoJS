@@ -18,6 +18,9 @@ header {
 header h2 {
   font-size: 35px;
 }
+header nav a {
+  color: white;
+}
 
 .buscador0km {
   width: 300px;
