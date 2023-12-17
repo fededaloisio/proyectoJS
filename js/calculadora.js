@@ -11,7 +11,7 @@
 
         const diferencia = dineroDisponible >= 0 ? valor0km - dineroDisponible: valor0km;
 
-        const cuotasTotales = (diferencia / valCuotas).toFixed(2)
+        const cuotasTotales = (diferencia / valCuotas).toFixed(1)
 
         const valCuotasPuntos = valCuotas.toLocaleString();
 
