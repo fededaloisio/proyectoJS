@@ -19,22 +19,28 @@ header {
 header h2 {
   font-size: 35px;
 }
-header nav {
+header nav ul {
   display: flex;
 }
-header nav a {
+header nav ul li {
+  list-style: none;
+  transition: 0.5s;
+}
+header nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 24px;
   margin: 0px 10px;
-  transition: 0.6s;
-  padding: 3px;
+  transition: 0.5s;
+  font-size: 21px;
 }
-header nav a:hover {
+header nav ul li a:hover {
   color: black;
-  scale: 1.1;
+}
+header nav ul li:hover {
   background-color: grey;
   border-radius: 7px;
+  scale: 1.1;
+  padding: 2px;
 }
 
 .buscador0km {
@@ -95,4 +101,92 @@ header nav a:hover {
 }
 #buscador2 output {
   font-size: 23px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- *//*# sourceMappingURL=style.css.map */
+
+.box {
+  height: auto;
+  background-color: greenyellow;
+  margin: 25px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.box form {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 25px;
+}
+
+.form-footer {
+display: flex;
+justify-content: space-around;
+width: 100%;
+margin-top: 10px;
+}
+
+/* .formBox {
+display: flex;
+justify-content: space-around
+} */
+
+input[type="number"]{
+font-size: 19px;
+margin: 15px 10px;
+padding: 3px;
+outline: none;
+border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+-webkit-appearance: none;
+margin: 0;
+}
+
+.box h3 {
+margin: 0 auto;
+margin-top: 5px;
+font-size: 30px;
+}
+
+.box form label #km0 {
+border: none;
+}
+
+#cuotaValor {
+width: 125px;
+}
+
+#btnCalculadora {
+width: 125px;
+height: 30px;
+align-self: center;
+background-color: red;
+outline: none;
+border: 2px solid black;
+border-radius: 5px;
+height: 50px;
+transition: .5s;
+cursor: pointer;
+}
+
+#btnCalculadora:hover {
+background-color: orangered;
+}
+
+#outputForm {
+border: 3px solid black;
+height: 50px;
+width: auto;
+padding: 15px;
+border-radius: 8px;
+background-color: red;
+font-size: 19px;
+}
