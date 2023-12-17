@@ -14,12 +14,25 @@ header {
     padding: 30px;
     margin-bottom: 25px;
     align-items: center;
+    justify-content: space-between;
     h2 {
         font-size: 35px;
     }
     nav {
+        display: flex;;
         a {
             color: white;
+            text-decoration: none;
+            font-size: 24px;
+            margin: 0px 10px;
+            transition: .6s;
+            padding: 3px;
+        }
+        a:hover {
+            color: black;
+            scale: 1.1;
+            background-color: grey;
+            border-radius: 7px;
         }
     }
 }
@@ -84,3 +97,5 @@ header {
         font-size: 23px;
     }
 }
+
+

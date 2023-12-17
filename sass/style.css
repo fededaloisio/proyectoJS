@@ -14,12 +14,27 @@ header {
   padding: 30px;
   margin-bottom: 25px;
   align-items: center;
+  justify-content: space-between;
 }
 header h2 {
   font-size: 35px;
 }
+header nav {
+  display: flex;
+}
 header nav a {
   color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0px 10px;
+  transition: 0.6s;
+  padding: 3px;
+}
+header nav a:hover {
+  color: black;
+  scale: 1.1;
+  background-color: grey;
+  border-radius: 7px;
 }
 
 .buscador0km {
@@ -80,6 +95,4 @@ header nav a {
 }
 #buscador2 output {
   font-size: 23px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
