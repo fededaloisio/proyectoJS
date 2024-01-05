@@ -1,46 +1,83 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volkswagen</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/main.js" type="module" defer></script>
-    <script type="module" src="./js/objetos.js" defer></script>
-    <link rel="stylesheet" href="sass/style.css">
-</head>
-<body>
-    <header>
-        <h2>¡Buscá tu auto 0km y formas de pago!</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="simulador.html">Simulá tu compra</a></li>
-            </ul>
-        </nav>
-    </header>
+import { autoAmarok, autoNivus, autoPolo, autoSaveiro, autoTaos, autoTCross, autoVento, autoVirtus } from './objetos.js';
 
+const vehiculoBuscado = $("#vehiculoBuscado");
+const output = $("#resultado");
+const autos = [autoAmarok, autoNivus, autoPolo, autoSaveiro, autoTaos, autoTCross, autoVento, autoVirtus];
 
-    <section class="buscador0km">
-        <input type="text" placeholder="Modelo que busca" id="vehiculoBuscado">
-        
-        <button id="boton1">Enviar</button>
-        
-        <output id="resultado">
+const modelosJSON = `{
+    "modelos": {
+        "nivus": {
+            "modelo": "Nivus",
+            "tipo": "SUV",
+            "precio": 13000000,
+            "financiable": false
+        },
+        "taos": {
+            "modelo": "Taos",
+            "tipo": "SUV",
+            "precio": 25000000,
+            "financiable": true
+        },
+        "tcross": {
+            "modelo": "T-Cross",
+            "tipo": "SUV",
+            "precio": 13000000,
+            "financiable": false
+        },
+        "amarok": {
+            "modelo": "Amarok",
+            "tipo": "Pick-Up",
+            "precio": 18000000,
+            "financiable": true
+        },
+        "saveiro": {
+            "modelo": "Saveiro",
+            "tipo": "Pick-Up",
+            "precio": 11000000,
+            "financiable": false
+        },
+        "polo": {
+            "modelo": "Polo",
+            "tipo": "Hatchback",
+            "precio": 10000000,
+            "financiable": true
+        },
+        "vento": {
+            "modelo": "Vento",
+            "tipo": "Sedan",
+            "precio": 27000000,
+            "financiable": false
+        },
+        "virtus": {
+            "modelo": "Virtus",
+            "tipo": "Sedan",
+            "precio": 10000000,
+            "financiable": true
+        }
+    }
+}`;
 
-        </output>
-    </section>
+const jsonData = JSON.parse(modelosJSON);
 
-    <section id="buscador2">
-        <input type="text" id="input2" placeholder="Tipo de vehiculo">
-        
-        <button id="boton2">Enviar</button>
+$("#boton1").click(function () {
+    const modeloBuscado = vehiculoBuscado.val();
+    const resultado = buscarAuto(modeloBuscado);
+    output.html(resultado);
+});
 
-        <output id="output2">
+function buscarAuto(modelo) {
+    const autos = [autoNivus, autoAmarok, autoPolo, autoSaveiro, autoTCross, autoTaos, autoVento, autoVirtus];
 
-        </output>
-    </section>
+    for (const auto of autos) {
+        if (auto.modelo.toLowerCase() === modelo.toLowerCase()) {
+            return `
+                <p>Modelo: ${auto.modelo}</p>
+                <p>Tipo: ${auto.tipo}</p>
+                <p>Precio: $${auto.precio.toLocaleString()}</p>
+                <p>Financiable: ${auto.financiable ? 'Sí' : 'No'}</p>
+            `;
+        }
+    }
 
-
-</body>
-</html>
+    return "No contamos con ese modelo";
+}
