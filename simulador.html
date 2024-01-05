@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <script type="module" src="js/calculadora.js"></script>
+</head>
+<body>
+    <header>
+        <h2>¡Buscá tu auto 0km y formas de pago!</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="simulador.html">Simulá tu compra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="box">
+            <h3>¡Simulá tu presupuesto con valores de cuota, tipos de financiación y montos personalizados!</h3>
+            <form action="" class="formCalculadora">
+                <label for="km0">
+                    Cantidad a financiar:
+                    <input type="number" id="km0">
+                </label>
+                <label for="presupuesto">
+                    Tu presupuesto:
+                    <input type="number" id="presupuesto">
+                </label>
+                <label for="cuotaValor">
+                    Valor de cuota en $ ARS:
+                    <input type="number" id="cuotaValor">
+                </label>
+                <div class="form-footer">
+                    <button type="button" id="btnCalculadora">Enviar</button>
+                    <output id="outputForm"></output>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+
+header {
+    display: flex;
+    background-color: red;
+    padding: 30px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        font-size: 35px;
+    }
+    nav {
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                transition: .5s;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0px 10px;
+                    transition: .5s;
+                    font-size: 21px;
+                }
+                a:hover {
+                    color: black;
+                }
+            }
+            li:hover {
+                background-color: grey;
+                border-radius: 7px;
+                scale: 1.1;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+.buscador0km {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: red;
+    height: 300px;
+    margin-bottom: 45px;
+    input {
+        width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+    output {
+        font-size: 23px;
+    }
+}
+
+/* ----------------------------------- */
+
+#buscador2 {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: red;
+    height: 420px;
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 25px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+    output {
+        font-size: 23px;
+    }
+}
+
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */

@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+}
+
+header {
+  display: flex;
+  background-color: red;
+  padding: 30px;
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+header h2 {
+  font-size: 35px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  transition: 0.5s;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 10px;
+  transition: 0.5s;
+  font-size: 21px;
+}
+header nav ul li a:hover {
+  color: black;
+}
+header nav ul li:hover {
+  background-color: grey;
+  border-radius: 7px;
+  scale: 1.1;
+  padding: 2px;
+}
+
+.buscador0km {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: red;
+  height: 300px;
+  margin-bottom: 45px;
+}
+.buscador0km input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+.buscador0km button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+.buscador0km output {
+  font-size: 23px;
+}
+
+/* ----------------------------------- */
+#buscador2 {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: red;
+  height: 420px;
+}
+#buscador2 input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+#buscador2 button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+#buscador2 output {
+  font-size: 23px;
+}
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- *//*# sourceMappingURL=style.css.map */
+
+.box {
+  height: auto;
+  background-color: greenyellow;
+  margin: 25px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.box form {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 25px;
+}
+
+.form-footer {
+display: flex;
+justify-content: space-around;
+width: 100%;
+margin-top: 10px;
+}
+
+/* .formBox {
+display: flex;
+justify-content: space-around
+} */
+
+input[type="number"]{
+font-size: 19px;
+margin: 15px 10px;
+padding: 3px;
+outline: none;
+border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+-webkit-appearance: none;
+margin: 0;
+}
+
+.box h3 {
+margin: 0 auto;
+margin-top: 5px;
+font-size: 30px;
+}
+
+.box form label #km0 {
+border: none;
+}
+
+#cuotaValor {
+width: 125px;
+}
+
+#btnCalculadora {
+width: 125px;
+height: 30px;
+align-self: center;
+background-color: red;
+outline: none;
+border: 2px solid black;
+border-radius: 5px;
+height: 50px;
+transition: .5s;
+cursor: pointer;
+}
+
+#btnCalculadora:hover {
+background-color: orangered;
+}
+
+#outputForm {
+border: 3px solid black;
+height: 50px;
+width: auto;
+padding: 15px;
+border-radius: 8px;
+background-color: red;
+font-size: 19px;
+}
